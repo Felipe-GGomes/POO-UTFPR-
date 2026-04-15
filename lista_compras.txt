@@ -1,2 +1,3 @@
-Feijao - 2 - 5.0
-arroz - 3 - 10.0
+banana - 2 - 1.0
+laraja - 10 - 2.0
+ameixa - 4 - 4.0

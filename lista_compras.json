@@ -1,9 +1,13 @@
 [ {
-  "nome" : "Feijao",
+  "nome" : "banana",
   "quantidade" : 2,
-  "preco" : 5.0
+  "preco" : 1.0
 }, {
-  "nome" : "arroz",
-  "quantidade" : 3,
-  "preco" : 10.0
+  "nome" : "laraja",
+  "quantidade" : 10,
+  "preco" : 2.0
+}, {
+  "nome" : "ameixa",
+  "quantidade" : 4,
+  "preco" : 4.0
 } ]

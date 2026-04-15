@@ -32,7 +32,7 @@ public class PersistenciaTexto implements PersistenciaStrategy{
                 produtos.add(new Produto(partes[0], Integer.parseInt(partes[1]), Double.parseDouble(partes[2])));
             }
             System.out.println("Lista do Arquivo de Texto");
-            System.out.println(this.toString());
+            System.out.println(produtos);
             return produtos;
         } catch (IOException e) {
             System.out.println("Erro ao carregar o arquivo: "+e.getMessage());
