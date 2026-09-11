@@ -1,0 +1,21 @@
+[ {
+  "marca" : "Chevrolet",
+  "modelo" : "Onix",
+  "ano" : 2022,
+  "Cor_veiculo" : "Carmim"
+}, {
+  "marca" : "Chevrolet",
+  "modelo" : "Opala",
+  "ano" : 1966,
+  "Cor_veiculo" : "Preto"
+}, {
+  "marca" : "Ford",
+  "modelo" : "Pampa",
+  "ano" : 2001,
+  "Cor_veiculo" : "Laranja"
+}, {
+  "marca" : "Chevrolet",
+  "modelo" : "Onix",
+  "ano" : 2020,
+  "Cor_veiculo" : "Preto"
+} ]
