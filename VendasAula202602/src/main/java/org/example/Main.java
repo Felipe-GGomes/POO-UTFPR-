@@ -9,7 +9,6 @@ public class Main {
         ListaDeCompras model = new ListaDeCompras();
         ListaDeComprasView view = new ListaDeComprasView();
         ListaDeComprasController controller = new ListaDeComprasController(model, view);
-
         controller.iniciar();
     }
 }
