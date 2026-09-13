@@ -1,3 +1,2 @@
-banana - 2 - 1.0
-laraja - 10 - 2.0
-ameixa - 4 - 4.0
+Pastel - 2 - 10.0
+Sabão em pó - 10 - 25.9
