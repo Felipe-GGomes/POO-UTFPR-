@@ -3,6 +3,8 @@ package org.example.model;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 
 public class ListaDeCompras {
     private List<Produto> produtos;
@@ -91,5 +93,30 @@ public class ListaDeCompras {
             sb.append((i + 1)).append(". ").append(produtos.get(i).toString()).append("\n");
         }
         return sb.toString();
+    }
+
+    public void salvarEmArquivoJson(String nomeArquivo) {
+        if (!produtos.isEmpty()) {
+            try {
+                ObjectMapper objectMapper = new ObjectMapper();
+                objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+                objectMapper.writeValue(new File(nomeArquivo), produtos);
+            } catch (IOException e) {
+                System.out.println("Erro ao salvar o arquivo: " + e.getMessage());
+            }
+        } else {
+            System.out.println("Lista vazia!");
+        }
+    }
+
+    public void carregarDeArquivoJson(String nomeArquivo) {
+        produtos.clear();
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            produtos = objectMapper.readValue(new File(nomeArquivo),
+                    objectMapper.getTypeFactory().constructCollectionType(List.class, Produto.class));
+        } catch (IOException e) {
+            System.out.println("Erro ao carregar o arquivo: " + e.getMessage());
+        }
     }
 }

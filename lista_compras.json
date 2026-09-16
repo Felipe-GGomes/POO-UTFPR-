@@ -1,0 +1,13 @@
+[ {
+  "nome" : "maça",
+  "quantidade" : 1,
+  "preco" : 1.0
+}, {
+  "nome" : "hortela",
+  "quantidade" : 1,
+  "preco" : 1.0
+}, {
+  "nome" : "banana",
+  "quantidade" : 1,
+  "preco" : 1.0
+} ]
