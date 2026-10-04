@@ -21,6 +21,9 @@ public class ListaDeComprasView {
         System.out.println("7. Carregar Lista de Arquivo Binário");
         System.out.println("8. Salvar Lista em Arquivo JSON");
         System.out.println("9. Carregar Lista de Arquivo JSON");
+        System.out.println("10. Filtrar Produtos por Quantidade Mínima");
+        System.out.println("11. Calcular Valor Total da Lista");
+        System.out.println("12. Imprimir Lista em Ordem Alfabética");
         System.out.println("0. Sair");
         System.out.print("Escolha uma opção: ");
     }
@@ -71,5 +74,22 @@ public class ListaDeComprasView {
 
     public void exibirMensagem(String mensagem) {
         System.out.println(mensagem);
+    }
+
+    public int lerQuantidadeMinima() {
+        int quantidade = 0;
+        boolean quantidadeValida = false;
+        while (!quantidadeValida) {
+            try {
+                System.out.print("Quantidade mínima: ");
+                quantidade = scanner.nextInt();
+                scanner.nextLine();
+                quantidadeValida = true;
+            } catch (InputMismatchException e) {
+                System.out.println("Erro: Quantidade mínima deve ser um número inteiro. Tente novamente.");
+                scanner.nextLine();
+            }
+        }
+        return quantidade;
     }
 }
